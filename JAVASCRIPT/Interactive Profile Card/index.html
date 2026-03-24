@@ -4,10 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Card</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="card">
-        <img src="" alt="">
+    <div class="container">
+        <div class="card">
+        <img src="https://github.com/vinaydebug/Freecodecamp/blob/372ac23ea64fce215ff0cd4f48a931e430202733/JAVASCRIPT/Interactive%20Profile%20Card/assets/Bolo%20juba%20kesri.jpg?raw=true" alt="Profile image of Raju bhaiya" width="400">
+    <h1>Raju bhayia</h1>
+    <p>Raju Bhaiya is the kind of person who turns ordinary days into memorable stories. Born and raised in a small town, he grew up surrounded by simplicity but always carried big dreams. Known among friends for his sharp wit and easygoing nature, Raju has a way of making people feel comfortable wherever he goes.</p>
+    <button class="btn_01" id="message_btn">Click me and see magic</button>
+    <p id="message">Bolo zubaan kesri</p><br>
+        <button class="btn_02" id="theme_btn">Change theme</button>
     </div>
+    </div>
+    <script>
+        const theme_btn = document.querySelector("#theme_btn");
+const messageBtn = document.querySelector("#message_btn");
+const message = document.querySelector("#message");
+
+theme_btn.addEventListener("click", function () {
+  document.body.classList.toggle("dark");
+
+  if (document.body.classList.contains("dark")) {
+    theme_btn.textContent = "Light Mode ☀️";
+  } else {
+    theme_btn.textContent = "Dark Mode 🌙";
+  }
+});
+
+messageBtn.addEventListener("click", function () {
+  message.classList.toggle("show");
+
+  if (message.classList.contains("show")) {
+    messageBtn.textContent = "Magic Done ✅";
+  } else {
+    messageBtn.textContent = "Click me and see magic";
+  }
+});
+    </script>
 </body>
 </html>
