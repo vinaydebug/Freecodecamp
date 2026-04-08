@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+</head>
+<body>
+    <h1 id="title">SURVEY FORM</h1>
+    <p id="description">Thank you for taking the time to participate in this survey.</p>
+    <form action="" id="survey-form">
+        <label id="name-label" for="name">Enter your Name: </label> <input id="name" name="name-label" type="text" placeholder="Raju bhaiya" required> <br><br>
+        <label id="email-label" for="email">Enter your Email: </label><input id="email" name="email-label" type="email" placeholder="rajubhai@xyz.com" required> <br><br>
+        <label id="number-label" for="number">Enter a Number:</label> <input id="number" name="number-label" type="number" min="1111111111" max="9999999999" placeholder="5555555555" required> <br><br>
+        <p>Which technology you want to learn?</p>
+        <select name="field" id="dropdown">
+            <option value="ai" selected>AI</option>
+            <option value="fd">Frontend Development</option>
+            <option value="bd">Backend Development</option>
+            <option value="email">Email Development</option>
+            <option value="cs">Cybersecurity</option>
+        </select>
+        <p>Tell us about you:</p>
+        <label for="student">Student</label> <input type="radio" name="about" id="student" value="student">
+        <label for="professional">Professional</label> <input type="radio" name="about" id="professional" value="professional">
+        <p>What you want master:</p>
+        <label for="ai-ml">AI + ML</label> <input type="checkbox" name="" id="ai-ml" value="AI"><br>
+        <label for="fd-ai">Frontend Development + AI</label> <input type="checkbox" name="" id="fd-ai" value="fd"><br>
+        <label for="backend">Backend Development</label> <input type="checkbox" name="" id="bdbackend" value="bd">
+        <p><label for="comments">Add additional comments:</label></p>
+        <textarea name="" id="comments" rows="4" cols="30" placeholder="Add your comments here..."></textarea> <br>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>
