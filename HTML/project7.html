@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Checkout Page</title>
+</head>
+<body>
+    <h1>Checkout</h1>
+    <section>
+        <h2>Your Cart</h2>
+        <img src="https://picsum.photos/200/200" alt="random images">
+    </section>
+    <section>
+        <h2>Payment Information</h2>
+        <form action="">
+           <label for="card-name">Card Holder Name <span aria-hidden="true">*</span></label> <input required type="text" name="card-name" id="card-name">
+           <label for="card-number">Card Number <span aria-hidden="true">*</span></label> <input required type="text" name="card-number" id="card-number" aria-describedby="card-number-help">
+        <p id="card-number-help" aria-describedby="card-number-help">Please enter your 16-digit card number without spaces or dashes.</p>
+    <label for="expiry-date">Expiry Date <span aria-hidden="true">*</span></label> <input type="text" name="expiry-date" placeholder="MM/YY" id="expiry-date">
+    <label for="cvv-number">Enter CVV <span aria-hidden="true">*</span></label> <input type="number" name="cvv-number" id="cvv-number">
+    <input type="submit" name="button" id="" value="Submit">    
+    </form>
+    </section>
+</body>
+</html>
