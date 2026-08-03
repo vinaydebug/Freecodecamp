@@ -7,35 +7,96 @@
     <title>Book Inventory</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h1>Book Inventory</h1>
-    <div class="book_catalog">
-        <span class="divider_point"><span class="left_circle"></span></span>
-        <img src="https://cdn-icons-png.flaticon.com/128/10221/10221707.png" alt="book icon" class="book_icon">
-        <span class="divider_point"><span class="right_circle"></span></span>
-    </div>
-    <table>
-        <thead>
-            <tr>
-                <th>Title</th>
-                <th>Author</th>
-                <th>Category</th>
-                <th>Status</th>
-                <th>Rate</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="read">
-                <th>The Alchemist</th>
-                <td>Paulo Coelho</td>
-                <td>Fiction</td>
-                <td><span class="status">Read</span></td>
-                <td><span class="rate three">
-                        <span></span><span></span><span></span>
-                    </span></td>
-            </tr>
-        </tbody>
-    </table>
+    <main>
+        <h1>Book Inventory</h1>
+        <div class="book_catalog">
+            <span class="divider_point"><span class="left_circle"></span></span>
+            <img src="https://cdn-icons-png.flaticon.com/128/10221/10221707.png" alt="book icon" class="book_icon">
+            <span class="divider_point"><span class="right_circle"></span></span>
+        </div>
+        <div class="table_container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>Category</th>
+                        <th>Status</th>
+                        <th>Rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="read">
+                        <th>The Alchemist</th>
+                        <td>Paulo Coelho</td>
+                        <td>Fiction</td>
+                        <td><span class="status">Read</span></td>
+                        <td><span class="rate three">
+                                <span></span><span></span><span></span>
+                            </span></td>
+                    </tr>
+                    <tr class="in-progress">
+                        <th>Atomic Habits</th>
+                        <td>James Clear</td>
+                        <td>Self=help</td>
+                        <td><span class="status">In Progress</span></td>
+                        <td><span class="rate two">
+                                <span></span><span></span><span></span>
+                            </span></td>
+                    </tr>
+                    <tr class="to-read">
+                        <th>The Great Gatsby</th>
+                        <td>f.scott fizgerald</td>
+                        <td>classic</td>
+                        <td><span class="status">To Read</span></td>
+                        <td><span class="rate">
+                                <span></span><span></span><span></span>
+                            </span></td>
+                    </tr>
+                    <tr class="read">
+                        <th>the hobbit</th>
+                        <td>j.r.r. tolkien</td>
+                        <td>fantasy</td>
+                        <td><span class="status">Read</span></td>
+                        <td><span class="rate three">
+                                <span></span><span></span><span></span>
+                            </span></td>
+                    </tr>
+                    <tr class="in-progress">
+                        <th>mindset</th>
+                        <td>carol s. dweck</td>
+                        <td>Self=help</td>
+                        <td><span class="status">In Progress</span></td>
+                        <td><span class="rate one">
+                                <span></span><span></span><span></span>
+                            </span></td>
+                    </tr>
+                    <tr class="to-read">
+                        <th>1984</th>
+                        <td>george orwell</td>
+                        <td>dystopian</td>
+                        <td><span class="status">To Read</span></td>
+                        <td><span class="rate one">
+                                <span></span><span></span><span></span>
+                            </span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="status_info">
+                <span>
+                    <span class="circle"></span> Read
+                </span>
+                <span>
+                    <span class="circle"></span> In Progress
+                </span>
+                <span>
+                    <span class="circle"></span> To Read
+                </span>
+            </div>
+    </main>
 </body>
 
 </html>
