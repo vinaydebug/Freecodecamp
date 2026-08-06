@@ -1,0 +1,149 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.2;
+}
+
+:root{
+    --caption-txt: #101628;
+    --day-txt: #020718;
+    --color0: #fefefe;
+    --color1: #e3f5e1;
+    --color2: #bfebba;
+    --color3: #51b448;
+    --color4: #34a22e;
+    --color5: #056d04;
+    --solid-border: 1px solid black;
+    --dashed-border: 1px dashed black;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.table_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+table{
+    table-layout: fixed;
+    width: 36rem;
+    border-collapse: collapse;
+}
+
+caption{
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--caption-txt);
+    margin-bottom: 1rem;
+}
+
+th{
+    text-transform: capitalize;
+}
+
+.sharp, .half{
+    height: 1.8rem;
+}
+
+tr :first-child{
+    width: 4rem;
+}
+
+thead > tr > th {
+    border-bottom: var(--dashed-border);
+    padding-bottom: .5rem;
+}
+
+thead th:first-child{
+    border-bottom: none;
+}
+    
+.sharp td {
+    border-right: var(--solid-border);
+    border-left: var(--solid-border);
+    border-bottom: var(--solid-border);
+}
+
+.half td {
+    border-right: var(--solid-border);
+    border-left: var(--solid-border);
+    border-bottom: var(--dashed-border);
+}
+
+/* Availability */
+
+.available-0{
+    background-color: var(--color0);
+}
+
+.available-1{
+    background-color: var(--color1);
+}
+
+.available-2{
+    background-color: var(--color2);
+}
+
+.available-3{
+    background-color: var(--color3);
+}
+
+.available-4{
+    background-color: var(--color4);
+}
+
+.available-5{
+    background-color: var(--color5);
+}
+
+.time{
+    text-align: right;
+    padding: 0.5rem;
+}
+
+#legend{
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    height: 3.5rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 1rem;
+}
+
+.legend-line{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+#legend span{
+    display: inline-block;
+    width: 5rem;
+    height: 2rem;
+}
+
+#legend-gradient {
+    width: 100%;
+    height: 1.2rem;
+    background-image: linear-gradient(90deg, 
+        var(--color0) 0%, var(--color0) 17%, 
+        var(--color1) 17%, var(--color1) 34%, 
+        var(--color2) 34%, var(--color2) 51%, 
+        var(--color3) 51%, var(--color3) 68%, 
+        var(--color4) 68%, var(--color4) 85%, 
+        var(--color5) 85%, var(--color5) 100%);
+    border: var(--dashed-border);
+}
