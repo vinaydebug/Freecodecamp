@@ -1,0 +1,133 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+}
+
+.newspaper-layout{
+    width: 96%;
+    display: grid;
+    grid-template-areas: 
+    "title title title"
+    "feature-article feature-article cover-image"
+    "secondary-article secondary-article cover-image"
+    "small-article1 small-article2 small-article3";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr;
+    gap: 16px;
+    padding: 16px;
+}
+
+/* Structure */
+.title{
+    grid-area: title;
+    font-size: 2.2rem;
+    line-height: 1.2;
+    color: linen;
+    background-color: navy;
+    text-align: center;
+    padding: 16px;
+}
+
+.feature-article{
+    grid-area: feature-article;
+}
+
+.small-article1{
+    grid-area: small-article1;
+}
+
+.small-article2{
+    grid-area: small-article2;
+}
+
+.small-article3{
+    grid-area: small-article3;
+}
+
+.secondary-article{
+    grid-area: secondary-article;
+}
+
+.cover-image{
+    grid-area: cover-image;
+}
+
+.cover-image img{
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.feature-article, .secondary-article{
+    background-color: lightgray;
+    padding: 16px;
+    font-size: 1.5rem;
+}
+
+.small-article1, .small-article2, .small-article3{
+    background-color: lightslategray;
+    padding: 16px;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.cover-image{
+    background-color: lightslategray;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-article p,
+.secondary-article p,
+.small-article1 p,
+.small-article2 p,
+.small-article3 p {
+    line-height: 1.2;
+    margin-top: 1.2rem;
+}
+
+Mobile responsive
+@media (max-width:720px) {
+    .title{
+        font-size: 1.6rem;
+    }
+    .newspaper-layout{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "title title"
+    "feature-article feature-article"
+    "secondary-article secondary-article"
+    "cover-image cover-image"
+    "small-article1 small-article2"
+    "small-article3 small-article3";
+    }
+}
+
+@media (max-width:550px) {
+    .title{
+        font-size: 1.2rem;
+    }
+    .newspaper-layout{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "title"
+    "feature-article"
+    "secondary-article"
+    "cover-image"
+    "small-article1"
+    "small-article2"
+    "small-article3";
+    }
+}
