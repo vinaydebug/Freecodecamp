@@ -2,9 +2,8 @@
 
 A curated collection of mini projects and exercises built while completing the FreeCodeCamp curriculum, demonstrating progressive skill development in HTML, CSS, and JavaScript.
 
-![Uploading _C__Users_PC_Documents_GitHub_Freecodecamp_CSS_project28_index.html.png…]()
-![Uploading _C__Users_PC_Documents_GitHub_Freecodecamp_CSS_project31_index.html.png…]()
-
+<img width="2004" height="9032" alt="_C__Users_PC_Documents_GitHub_Freecodecamp_CSS_project28_index html" src="https://github.com/user-attachments/assets/4d019a8a-cf14-47b1-97fa-35fea6a24967" />
+<img width="2004" height="5360" alt="_C__Users_PC_Documents_GitHub_Freecodecamp_CSS_project31_index html" src="https://github.com/user-attachments/assets/99ac0e25-c240-423b-9907-75f84681bcd2" />
 
 ## 📋 Overview
 
