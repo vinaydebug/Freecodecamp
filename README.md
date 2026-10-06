@@ -2,6 +2,10 @@
 
 A curated collection of mini projects and exercises built while completing the FreeCodeCamp curriculum, demonstrating progressive skill development in HTML, CSS, and JavaScript.
 
+![Uploading _C__Users_PC_Documents_GitHub_Freecodecamp_CSS_project28_index.html.png…]()
+![Uploading _C__Users_PC_Documents_GitHub_Freecodecamp_CSS_project31_index.html.png…]()
+
+
 ## 📋 Overview
 
 This repository showcases hands-on projects created as part of working through FreeCodeCamp's Responsive Web Design and front-end development courses. Each project represents practical application of web development concepts, ranging from basic HTML/CSS structures to interactive JavaScript applications.
